@@ -54,39 +54,39 @@
         <fieldset class="form__group form-group form-group--name">
           <legend class="form-group__title title">Представьтесь:</legend>
           <p class="form-group__item form-item">
-            <label class="form-item__label form-item__label--firstname" for="firstname">Имя*:</label>
-            <input class="form-item__input form-item__input--firstname" type="text" name="firstname" id="firstname"
+            <label class="form-item__label form-item-label" for="firstname">Имя*:</label>
+            <input class="form-item__input form-item-input" type="text" name="firstname" id="firstname"
               placeholder="Пётр" required>
           </p>
           <p class="form-group__item form-item">
-            <label class="form-item__label form-item__label--secondname" for="secondname">Фамилия*:</label>
-            <input class="form-item__input form-item__input--secondname" type="text" name="secondname" id="secondname"
+            <label class="form-item__label form-item-label" for="secondname">Фамилия*:</label>
+            <input class="form-item__input form-item-input" type="text" name="secondname" id="secondname"
               placeholder="Пустота" required>
           </p>
           <p class="form-group__item form-item">
-            <label class="form-item__label form-item__label--patronymic" for="patronymic">Отчество*:</label>
-            <input class="form-item__input form-item__input--patronymic" type="text" name="patronymic" id="patronymic"
+            <label class="form-item__label form-item-label" for="patronymic">Отчество:</label>
+            <input class="form-item__input form-item-input" type="text" name="patronymic" id="patronymic"
               placeholder="Викторович" required>
           </p>
         </fieldset>
         <fieldset class="form__group form-group form-group--contacts">
           <legend class="form-group__title title">Контактная информация:</legend>
           <p class="form-group__item form-item">
-            <label class="form-item__label form-item__label--phone" for="phone">Контактный телефон*:</label>
-            <input class="form-item__input form-item__input--phone" type="tel" name="phone" id="phone"
+            <label class="form-item__label form-item-label" for="phone">Контактный телефон*:</label>
+            <input class="form-item__input form-item-input form-item-input--contacts" type="tel" name="phone" id="phone"
               placeholder="Введите телефон" required>
           </p>
           <p class="form-group__item form-item">
-            <label class="form-item__label form-item__label--email" for="email">Электронная почта*:</label>
-            <input class="form-item__input form-item__input--email" type="email" name="email" id="email"
-              placeholder="Введите e-mail" required>
+            <label class="form-item__label form-item-label" for="email">Электронная почта*:</label>
+            <input class="form-item__input form-item-input form-item-input--contacts" type="email" name="email"
+              id="email" placeholder="Введите e-mail" required>
           </p>
         </fieldset>
         <fieldset class="form__group form-group form-group--impression">
           <legend class="form-group__title title">Ваше Общее впечатление:</legend>
           <ul class="form-group__list form-list">
             <li class="form-group__item form-item">
-              <label class="form-item__label form-item__label--positive" for="positive">
+              <label class="form-item__label form-item-label" for="positive">
                 <input class="form-item__input visually-hidden" type="radio" name="impression" value="positive"
                   id="positive" checked>
                 <span class="form-item__radio"></span>
@@ -94,7 +94,7 @@
               </label>
             </li>
             <li class="form-group__item form-item">
-              <label class="form-item__label form-item__label--negative" for="negative">
+              <label class="form-item__label form-item-label" for="negative">
                 <input class="form-item__input visually-hidden" type="radio" name="impression" value="negative"
                   id="negative">
                 <span class="form-item__radio"></span>
@@ -102,7 +102,7 @@
               </label>
             </li>
             <li class="form-group__item form-item">
-              <label class="form-item__label form-item__label--neutral" for="neutral">
+              <label class="form-item__label form-item-label" for="neutral">
                 <input class="form-item__input visually-hidden" type="radio" name="impression" value="neutral"
                   id="neutral">
                 <span class="form-item__radio"></span>
@@ -152,7 +152,7 @@
             placeholder="Опишите подробно все свои восторги"></textarea>
         </label>
         <button class="form__button button">Отправить отзыв</button>
-        <span class="form-required">Обязательные поля</span>
+        <span class="form__required">Обязательные поля</span>
       </form>
     </section>
   </main>
