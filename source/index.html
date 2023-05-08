@@ -5,17 +5,18 @@
   <meta charset="utf-8">
   <title>Город Седона</title>
   <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=1.0">
 </head>
 
 <body class="page-body">
 
   <!--Хэдер-->
 
-  <header class="main-header">
+  <header class="main-header container">
     <a class="main-header__logo">
       <img src="./img/logotype.svg" width="185" height="96" alt="City of Sedona.">
     </a>
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <button class="main-navigation__toggle">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -38,22 +39,24 @@
 
   <!--Хиро-->
 
-  <main class="main-container">
+  <main class="main-container container">
     <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
     <section class="main-hero">
       <h2 class="visually-hidden">Приветствие</h2>
       <img class="main-hero__background" src="./img/placeholder-mobile.jpg" width="320" height="389" alt="Горы.">
       <img class="main-hero__greetings" src="./img/intro.svg" width="282" height="214"
-        alt="Welcome to the gargeous Sedona 'Because the Grand Canyon sucks!'" style="background-color: aqua;">
+        alt="Welcome to the gargeous Sedona 'Because the Grand Canyon sucks!'">
       <!--фон добавлен временно для наглядности-->
     </section>
 
     <!--Преимущества-->
 
     <section class="advantages">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <p class="advantages__slogan title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p class="advantages__intro description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <div class="advantages__container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <p class="advantages__slogan title">Седона — небольшой<br>городок в Аризоне,<br>заслуживающий большего!</p>
+        <p class="advantages__intro description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
       <ul class="advantages__list">
         <li class="advantages__item advantages-item advantages-item--widened">
           <h3 class="advantages-item__title title title--light">Настоящий городок</h3>
@@ -106,16 +109,17 @@
 
     <section class="search-map">
       <h2 class="visually-hidden">Найти гостиницу</h2>
-      <p class="search-map__slogan title title--search">Заинтересовались?</p>
-      <p class="search-map__intro description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+      <p class="search-map__slogan title title--larger">Заинтересовались?</p>
+      <p class="search-map__intro description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+        гостиниц в
         седоне</p>
       <img class="search-map__map" src="./img/map-mobile.jpg" width="320" height="350" alt="Карта">
       <a class="search-map__button button" href="#">Найти гостиницу</a>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <h2 class="visually-hidden">Мы в соцсетях</h2>
-    <p class="main-footer__hash">#visitsedona</p>
+    <p class="main-footer__hash title title--larger">#visitsedona</p>
     <ul class="main-footer__social-list social-list">
       <li class="social-list__item">
         <a class="social-list__button button button--vk" href="#">
@@ -133,7 +137,7 @@
         </a>
       </li>
     </ul>
-    <a class="main-footer__htmlacademy-link htmlacademy-link" href="#">
+    <a class="main-footer__htmlacademy-link htmlacademy-link description" href="#">
       <span class="htmlacademy-link__made">Разработано</span>
       <svg class="htmlacademy-link__logo" width="27" height="35" viewBox="0 0 27 35" fill="none"
         xmlns="http://www.w3.org/2000/svg">
