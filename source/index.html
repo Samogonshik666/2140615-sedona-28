@@ -46,7 +46,6 @@
       <img class="main-hero__background" src="./img/placeholder-mobile.jpg" width="320" height="389" alt="Горы.">
       <img class="main-hero__greetings" src="./img/intro.svg" width="282" height="214"
         alt="Welcome to the gargeous Sedona 'Because the Grand Canyon sucks!'">
-      <!--фон добавлен временно для наглядности-->
     </section>
 
     <!--Преимущества-->
@@ -58,11 +57,13 @@
         <p class="advantages__intro description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
       <ul class="advantages__list">
-        <li class="advantages__item advantages-item advantages-item--widened">
-          <h3 class="advantages-item__title title title--light">Настоящий городок</h3>
-          <span class="advantages-item__number description description--light">№1</span>
-          <p class="advantages-item__description description description--light">Седона не аттракцион для туристов, там
-            течет своя жизнь</p>
+        <li class="advantages__item advantages-item advantages-item--widened advantages-item--decor">
+          <div class="advantages-item__container">
+            <h3 class="advantages-item__title title title--light">Настоящий городок</h3>
+            <span class="advantages-item__number description description--light">№1</span>
+            <p class="advantages-item__description description description--light">Седона не аттракцион для туристов,
+              там течет своя жизнь</p>
+          </div>
           <img class="advantages-item__image" src="./img/photo-city-mobile.jpg" width="320" height="260"
             alt="Домики на фоне гор.">
         </li>
@@ -80,10 +81,12 @@
           <p class="advantages-item__description description">Не только китайского, но и местного производства!</p>
         </li>
         <li class="advantages__item advantages-item advantages-item--widened">
-          <h3 class="advantages-item__title title title--light">Там есть Мост дьявола</h3>
-          <span class="advantages-item__number description description--light">№2</span>
-          <p class="advantages-item__description description description--light">Да, по нему можно пройти! Если вы
-            осмелитесь, конечно</p>
+          <div class="advantages-item__container">
+            <h3 class="advantages-item__title title title--light">Там есть Мост дьявола</h3>
+            <span class="advantages-item__number description description--light">№2</span>
+            <p class="advantages-item__description description description--light">Да, по нему можно пройти! Если вы
+              осмелитесь, конечно</p>
+          </div>
           <img class="advantages-item__image" src="./img/photo-city-mobile.jpg" width="320" height="260"
             alt="Домики на фоне гор.">
         </li>
@@ -113,10 +116,13 @@
       <p class="search-map__intro description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
         гостиниц в
         седоне</p>
-      <img class="search-map__map" src="./img/map-mobile.jpg" width="320" height="350" alt="Карта">
       <a class="search-map__button button" href="#">Найти гостиницу</a>
+      <img class="search-map__map" src="./img/map-mobile.jpg" width="320" height="350" alt="Карта">
     </section>
   </main>
+
+  <!--Футер-->
+
   <footer class="main-footer container">
     <h2 class="visually-hidden">Мы в соцсетях</h2>
     <p class="main-footer__hash title title--larger">#visitsedona</p>

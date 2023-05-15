@@ -5,32 +5,33 @@
   <meta charset="utf-8">
   <title>Город Седона</title>
   <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=1.0">
 </head>
 
 <body class="page-body">
 
   <!--Хэдер-->
 
-  <header class="main-header">
-    <a class="main-header__logo" href="./index.html">
+  <header class="main-header container">
+    <a class="main-header__logo">
       <img src="./img/logotype.svg" width="185" height="96" alt="City of Sedona.">
     </a>
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <button class="main-navigation__toggle">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-navigation__list site-list">
-        <li class="site-list__item site-list__item--current">
-          <a href="./index.html">Главная</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="./index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="./catalog.html">Фото и видео</a>
+          <a class="site-list__link site-list__link--current" href="./catalog.html">Фото и видео</a>
         </li>
         <li class="site-list__item">
-          <a href="./form.html">Форма отзыва</a>
+          <a class="site-list__link" href="./form.html">Форма отзыва</a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+          <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
         </li>
       </ul>
     </nav>
@@ -38,16 +39,15 @@
 
   <!--Фото и видео-->
 
-  <main class="main-container">
+  <main class="main-container container">
     <h1 class="visually-hidden">Галерея</h1>
     <section class="page-hero">
       <h2 class="visually-hidden">Приветствие</h2>
-      <img class="page-hero__background" src="./img/placeholder-mobile.jpg" width="320" height="389" alt="Горы.">
-      <img class="page-hero__greetings" src="./img/SEDONA.svg" width="229" height="39" alt="Sedona."
-        style="background-color: aqua;">
-      <!--фон добавлен временно для наглядности-->
+      <img class="page-hero__background" src="./img/placeholder-mobile-sedona.jpg" width="320" height="389" alt="Горы.">
+      <img class="page-hero__greetings" src="./img/sedona.svg" width="229" height="39" alt="Sedona.">
     </section>
-    <section class="gallery">
+
+    <section class="gallery container">
       <h2 class="gallery__title title">Фото и видео</h2>
       <p class="galery__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
         забыть о политике и экономике.</p>
@@ -89,7 +89,7 @@
         </li>
       </ul>
     </section>
-    <section class="video">
+    <section class="video container">
       <h2 class="visually-hidden">Видеопрезентация</h2>
       <p class="video__slogan title">Все еще сомневаетесь?</p>
       <p class="video__intro description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
@@ -100,27 +100,27 @@
 
   <!--Футер-->
 
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <h2 class="visually-hidden">Мы в соцсетях</h2>
-    <p class="main-footer__hash">#visitsedona</p>
+    <p class="main-footer__hash title title--larger">#visitsedona</p>
     <ul class="main-footer__social-list social-list">
       <li class="social-list__item">
-        <a class="social-list__button button social-list__button--vk" href="#">
+        <a class="social-list__button button button--vk" href="#">
           <span class="visually-hidden">Мы в VK</span>
         </a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__button button social-list__button--telegram" href="#">
+        <a class="social-list__button button button--telegram" href="#">
           <span class="visually-hidden">Мы в Telegram</span>
         </a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__button button social-list__button--youtube" href="#">
+        <a class="social-list__button button button--youtube" href="#">
           <span class="visually-hidden">Мы на YouTube</span>
         </a>
       </li>
     </ul>
-    <a class="main-footer__htmlacademy-link" href="#">
+    <a class="main-footer__htmlacademy-link htmlacademy-link description" href="#">
       <span class="htmlacademy-link__made">Разработано</span>
       <svg class="htmlacademy-link__logo" width="27" height="35" viewBox="0 0 27 35" fill="none"
         xmlns="http://www.w3.org/2000/svg">
